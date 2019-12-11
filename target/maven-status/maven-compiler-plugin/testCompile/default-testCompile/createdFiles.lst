@@ -1,0 +1,5 @@
+com\mapsynq\TestRunner\Runner.class
+com\mapsynq\StepDef\SignInStepDef.class
+com\mapsynq\Pages\HomePage.class
+com\mapsynq\Base\TestBase.class
+com\mapsynq\Pages\SignInPage.class
