@@ -8,6 +8,7 @@ import org.testng.Assert;
 import com.mapsynq.Base.TestBase;
 import com.mapsynq.Pages.HomePage;
 import com.mapsynq.Pages.SignInPage;
+import com.mapsynq.Utilities.TestUtil;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -17,29 +18,17 @@ import cucumber.api.java.en.When;
 
 public class SignInStepDef extends TestBase
 {
+
+	
 	HomePage hp=new HomePage();
 	SignInPage sp=new SignInPage();
-	
-	//Tagged Hook 
-	@Before("@Sanity")
-	public void Setup()
-	{
-		TestBase.Initialization();
-	}
-	
-	@After("@Sanity")
-	public void TearDown()
-	{
-		driver.quit();
-	}
-	
 	
 	@Given("^User is already in the Sign In Page$")
 	public void user_is_already_in_the_Sign_In_Page() throws Throwable {
 		
 		hp.SignInLnk.click();
-		driver.manage().timeouts().pageLoadTimeout(Integer.parseInt(config.getProperty("PageLoadTime")), TimeUnit.SECONDS);
-	   	driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("ImplicitTime")), TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(TestUtil.PageLoadTime, TimeUnit.SECONDS);
+	   	driver.manage().timeouts().implicitlyWait(TestUtil.ImplicitTime, TimeUnit.SECONDS);
 	  
 	  
 	}

@@ -61,7 +61,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 251013749987,
+  "duration": 31501435242,
   "status": "passed"
 });
 formatter.scenario({
@@ -101,9 +101,8 @@ formatter.match({
   "location": "SignInStepDef.user_is_already_in_the_Sign_In_Page()"
 });
 formatter.result({
-  "duration": 683370936,
-  "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy18.click(Unknown Source)\r\n\tat com.mapsynq.StepDef.SignInStepDef.user_is_already_in_the_Sign_In_Page(SignInStepDef.java:40)\r\n\tat ✽.Given User is already in the Sign In Page(SignIn.feature:5)\r\n",
-  "status": "failed"
+  "duration": 3366113269,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -119,16 +118,18 @@ formatter.match({
   "location": "SignInStepDef.user_enter_the_wrong_And_User_enter_the_wrong(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 314827514,
+  "status": "passed"
 });
 formatter.match({
   "location": "SignInStepDef.error_message_will_appear()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3966735996,
+  "status": "passed"
 });
 formatter.after({
-  "duration": 1187054409,
+  "duration": 742129814,
   "status": "passed"
 });
 });
